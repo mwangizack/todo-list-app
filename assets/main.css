@@ -81,6 +81,7 @@ h4 {
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .create-todo .options {
