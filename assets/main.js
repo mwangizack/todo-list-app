@@ -43,7 +43,6 @@ function DisplayTodos() {
 
     const label = document.createElement("label");
     const input = document.createElement("input");
-    const span = document.createElement("span");
     const content = document.createElement("div");
     const actions = document.createElement("div");
     const editButton = document.createElement("button");
@@ -51,13 +50,12 @@ function DisplayTodos() {
 
     input.type = "checkbox";
     input.checked = todo.done;
-    span.classList.add("bubble");
 
-    if (todo.category == "personal") {
-      span.classList.add("personal");
-    } else {
-      span.classList.add("business");
-    }
+    // if (todo.category == "personal") {
+    //   span.classList.add("personal");
+    // } else {
+    //   span.classList.add("business");
+    // }
 
     content.classList.add("todo-content");
     actions.classList.add("actions");
@@ -69,7 +67,6 @@ function DisplayTodos() {
     deleteButton.innerHTML = "Delete";
 
     label.appendChild(input);
-    label.appendChild(span);
     actions.appendChild(editButton);
     actions.appendChild(deleteButton);
     todoItem.appendChild(label);
