@@ -15,40 +15,67 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+      integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <main class="app">
-        <section class="greeting">
-            <h2 class="title">What's up, <input type="text" id="name" placeholder="(Your name here)"></h2>
-        </section>
-        <section class="create-todo">
-            <h3>CREATE A TODO</h3>
-            <form id="new-todo-form">
-                <h4>What's on your todo list?</h4>
-                <input type="text" name="content" id="content" placeholder="e.g. Journal for 20 minutes">
-                <h4>Pick a category</h4>
-                <div class="options">
-                    <!-- The input is placed inside the label for the purpose of making the text label clickable -->
-                    <label>
-                        <input type="radio" name="category" id="category1" value="business">
-                        <span class="bubble business"></span>
-                        <div>Business</div>
-                    </label>
-                    
-                    <label>
-                        <input type="radio" name="category" id="category2" value="personal">
-                        <span class="bubble personal"></span>
-                        <div>Personal</div>
-                    </label>
-                </div>
-                <input type="submit" value="Add todo">
-            </form>
-        </section>
+      <section class="greeting">
+        <h2 class="title">
+          What's up,
+          <input type="text" id="name" placeholder="(Your name here)" />
+        </h2>
+      </section>
+      <section class="create-todo">
+        <h3>CREATE A TODO</h3>
+        <form id="new-todo-form">
+          <h4>What's on your todo list?</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g. Journal for 20 minutes"
+          />
+          <h4>Pick a category</h4>
+          <div class="options">
+            <!-- The input is placed inside the label for the purpose of making the text label clickable -->
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
 
-        <section class="todo-list">
-            <h3>TODO LIST</h3>
-            <div class="list" id="todo-list">
-                <!-- <div class="todo-item done">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+          <input type="submit" value="Add todo" />
+        </form>
+      </section>
+
+      <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list">
+          <!-- <div class="todo-item done">
                     <label>
                         <input type="checkbox" name="" id="">
                         <span class="bubble business"></span>
@@ -77,7 +104,7 @@
                 </div>
             </div> -->
         </div>
-        </section>
+      </section>
     </main>
 
     <script src="assets/main.js"></script>
