@@ -102,8 +102,7 @@ h4 {
   cursor: pointer;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
 
