@@ -36,7 +36,6 @@ function DisplayTodos() {
   const todoList = document.querySelector("#todo-list");
 
   todoList.innerHTML = "";
-  console.log(todos);
 
   todos.sort((a,b) => a.createdAt - b.createdAt).reverse().forEach((todo) => {
     const todoItem = document.createElement("div");
