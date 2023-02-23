@@ -50,19 +50,13 @@ function DisplayTodos() {
 
     input.type = "checkbox";
     input.checked = todo.done;
-
-    // if (todo.category == "personal") {
-    //   span.classList.add("personal");
-    // } else {
-    //   span.classList.add("business");
-    // }
-
+    
     content.classList.add("todo-content");
     actions.classList.add("actions");
     editButton.classList.add("edit");
     deleteButton.classList.add("delete");
 
-    content.innerHTML = `<input type = "text" value = "${todo.content}" readonly>`;
+    content.innerHTML = `<input type = "text" value = "${todo.content}" readonly>`;    
     editButton.innerHTML = "Edit";
     deleteButton.innerHTML = "Delete";
 
@@ -74,7 +68,7 @@ function DisplayTodos() {
     todoItem.appendChild(actions);
 
     todoList.appendChild(todoItem);
-
+    
     if (todo.done) {
       todoItem.classList.add("done");
     }
