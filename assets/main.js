@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
 
     todos.push(todo);
 
-    localStorage.getItem("todos", JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
 
     e.target.reset();
 
