@@ -57,8 +57,8 @@ function DisplayTodos() {
     deleteButton.classList.add("delete");
 
     content.innerHTML = `<input type = "text" value = "${todo.content}" readonly>`;    
-    editButton.innerHTML = "Edit";
-    deleteButton.innerHTML = "Delete";
+    editButton.innerHTML = '<i class="fa fa-pencil" aria-hidden="true"></i>';
+    deleteButton.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
     label.appendChild(input);
     actions.appendChild(editButton);
